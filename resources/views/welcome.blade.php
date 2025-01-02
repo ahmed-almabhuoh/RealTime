@@ -905,7 +905,7 @@
         </style>
     @endif
 
-    <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
+    {{-- <script src="https://js.pusher.com/8.2.0/pusher.min.js"></script>
     <script>
         // Enable pusher logging - don't include this in production
         Pusher.logToConsole = true;
@@ -919,7 +919,9 @@
             alert(JSON.stringify(data));
             // console.log('Ahmad');
         });
-    </script>
+    </script> --}}
+
+    @vite('resources/js/app.js')
 
 </head>
 
