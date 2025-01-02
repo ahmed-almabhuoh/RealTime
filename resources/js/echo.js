@@ -10,7 +10,7 @@ window.Echo = new Echo({
     forceTLS: true
 });
 
-window.Echo.channel(`test-channel`).listen(".test_event", (e) => {
+window.Echo.private(`test-channel`).listen(".test_event", (e) => {
     // console.log(e.order);
     // alert(e);
     alert("We are here?!");
