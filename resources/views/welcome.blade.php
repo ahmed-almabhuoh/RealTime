@@ -920,6 +920,11 @@
             // console.log('Ahmad');
         });
     </script> --}}
+    <script>
+        window.Laravel = {!! json_encode([
+            'userId' => auth()->user()->id,
+        ]) !!};
+    </script>
 
     @vite('resources/js/app.js')
 

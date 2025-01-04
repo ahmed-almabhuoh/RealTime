@@ -43,6 +43,6 @@ class TestEvent implements ShouldBroadcast
 
     public function broadcastAs()
     {
-        return 'test_event';
+        return 'test_event_1';
     }
 }

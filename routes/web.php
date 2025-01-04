@@ -15,6 +15,7 @@ Route::get('auth', function () {
     Auth::login(User::first());
     // return redirect()->route('welcome');
     // dd(auth()->user());
+    return redirect()->route('welcome');
 })->name('login');
 
 Route::get('fire', function () {
